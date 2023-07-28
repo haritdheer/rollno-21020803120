@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <script>
+        // Use Fetch API to make a GET request to the API
+        fetch('http://localhost:8008/numbers?url=http://20.244.56.144/numbers/primes&url=http://20.244.56.144/numbers/fibo&url=http://20.244.56.144/numbers/odd')
+            .then(response => response.json()) // Parse the JSON response
+            .then(data => console.log(data)) // Log the response in the console
+            .catch(error => console.error('Error:', error)); // Handle any errors
+    </script>
+</body>
+</html>
